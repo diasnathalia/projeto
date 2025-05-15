@@ -36,19 +36,19 @@
       margin: 0.5rem;
     }
     .btn-yellow {
-      background-color: #f6e05e; /* bg-yellow-500 */
+      background-color: #291ef5; /* bg-yellow-500 */
       color: white;
     }
     .btn-yellow:hover {
-      background-color: #ecc94b; /* hover:bg-yellow-600 */
+      background-color: #234ee7; /* hover:bg-yellow-600 */
     }
     .btn-white {
       background-color: white;
-      color: #d69e2e; /* text-yellow-600 */
-      border: 1px solid #f6e05e; /* border-yellow-500 */
+      color: #5e18d8; /* text-yellow-600 */
+      border: 1px solid #3652dd; /* border-yellow-500 */
     }
     .btn-white:hover {
-      background-color: #fefcbf; /* hover:bg-yellow-100 */
+      background-color: #0f18c4; /* hover:bg-yellow-100 */
     }
     .section {
       padding: 4rem 0;
@@ -65,6 +65,6 @@
     }
     p {
       margin-bottom: 1rem;
-      color: #4a5568; /* text-gray-600 */
+      color: #021e4f; /* text-gray-600 */
     }
   
