@@ -1,0 +1,96 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0a3d62 0%, #062c43 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .login-container {
+    background-color: #0a3d62;
+    padding: 2.5rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(6, 44, 67, 0.7);
+    width: 350px;
+    text-align: center;
+  }
+
+  .login-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+  }
+
+  label {
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+  }
+
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    box-shadow: 0 0 8px 2px #3a76b9;
+  }
+
+  button {
+    background-color: #1e5aa8;
+    color: white;
+    padding: 0.85rem 1rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    letter-spacing: 0.05em;
+  }
+
+  button:hover {
+    background-color: #144e8a;
+    box-shadow: 0 8px 20px rgba(20, 78, 138, 0.8);
+  }
+
+  .forgot-password {
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+    color: #9ec1e1;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .forgot-password:hover {
+    color: #c3d6f5;
+  }
+
+  @media (max-width: 380px) {
+    .login-container {
+      width: 90%;
+      padding: 2rem;
+    }
+  }
