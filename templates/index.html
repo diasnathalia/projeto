@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Construtora XYZ</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles_index.css')}}">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+      <h1 class="text-5xl font-bold mb-4">Bem-vindo à Construtora XYZ</h1>
+      <p class="text-lg mb-6">Transformando projetos em realidade</p>
+      
+      <div>
+        <a href="#cadastro" class="btn btn-yellow">Cadastre-se</a>
+        <a href="#login" class="btn btn-white">Login</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seções Cadastro e Login -->
+  <section id="cadastro" class="section section-white">
+    <h2 class="text-3xl font-bold mb-6">Crie sua conta</h2>
+    <p>Acompanhe suas obras e serviços conosco.</p>
+    <a href="#" class="btn btn-yellow">Cadastrar</a>
+  </section>
+
+  <section id="login" class="section section-gray">
+    <h2 class="text-3xl font-bold mb-6">Já tem uma conta?</h2>
+    <p>Faça login para acessar sua área de cliente.</p>
+    <a href="#" class="btn btn-white">Entrar</a>
+  </section>
+</body>
+</html>

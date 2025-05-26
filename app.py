@@ -10,7 +10,7 @@ def index():
 def login():
     username = request.form['username']
     password = request.form['password']
-   
+    
     if username == 'gabriel@' and password == '123':
         return redirect('/servicos')
     else:
@@ -27,5 +27,5 @@ def servicos():
     return render_template('servicos.html')
 
 
-if __name__ == '_main_':
+if __name__ == '__main__':
     app.run(debug=True)
