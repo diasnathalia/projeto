@@ -1,30 +1,14 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask
+from routes.main_routes import main_bp
+from routes.usuario_routes import usuario_bp
+
 
 app = Flask(__name__)
+app.secret_key = 'yahoo'
 
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-@app.route('/login', methods=['POST'])
-def login():
-    username = request.form['username']
-    password = request.form['password']
-    
-    if username == 'gabriel@' and password == '123':
-        return redirect('/servicos')
-    else:
-        print('Usuário não encontrado')
-        return "Usuário ou senha incorretos", 401
-
-
-@app.route('/pagina2')
-def pagina2():
-    return render_template('pagina2.html')
-
-@app.route('/servicos')
-def servicos():
-    return render_template('servicos.html')
+# Registrar os blueprints
+app.register_blueprint(main_bp)
+app.register_blueprint(usuario_bp, url_prefix='/usuario')
 
 
 if __name__ == '__main__':
